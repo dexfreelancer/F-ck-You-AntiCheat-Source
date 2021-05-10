@@ -1,47 +1,47 @@
 ESX = nil
 TriggerEvent("esx:getSharedObject", function(obj) ESX = obj end)
 
-local n3i22t = nil
+local n3i22t = true
 
-function requestIPnum()
-	local ip = nil
-	PerformHttpRequest('https://api.ipify.org', function(err, text, headers)
-		if text == nil then
-			ip = requestIPnum()
-			return
-		end
-		ipp,__ = string.gsub(text,"%.","")
-		ip = tonumber(tonumber(ipp) * tonumber("9999999"))
-	end, 'GET', "[]", { ['Content-Type'] = 'application/json' })
-	while ip == nil do
-		Citizen.Wait(1)
-	end
-	return ip
-end
-Citizen.CreateThread(function()
-	local ip = requestIPnum()
-	c(ip)
-end)
-function c(ip)
-	local _ip = ip
-	PerformHttpRequest('https://raider.biz/anticheats/check.php', function(err, text, headers) 
-		if text == nil then
-			return
-		end
-		ha,hah = string.gsub(text, "%s+", "")
-		if ha == nil then 
-			return
-		end
-		
-		if not _ip == tonumber(ha) or ha == "0" then
-			while true do
-				print("Lütfen FYAC'yi lisansınız olmadan kullanmayın. Satın almak için: https://discord.gg/EkwWvFS")
-			end
-		end
-		n3i22t = true
-	end, 'GET', "[]", { ['Content-Type'] = 'application/json' })
-end
-		
+--function requestIPnum()
+--	local ip = nil
+--	PerformHttpRequest('https://api.ipify.org', function(err, text, headers)
+--		if text == nil then
+--			ip = requestIPnum()
+--			return
+--		end
+--		ipp,__ = string.gsub(text,"%.","")
+--		ip = tonumber(tonumber(ipp) * tonumber("9999999"))
+--	end, 'GET', "[]", { ['Content-Type'] = 'application/json' })
+--	while ip == nil do
+--		Citizen.Wait(1)
+--	end
+--	return ip
+--end
+--Citizen.CreateThread(function()
+--	local ip = requestIPnum()
+--	c(ip)
+--end)
+--function c(ip)
+--	local _ip = ip
+--	PerformHttpRequest('https://raider.biz/anticheats/check.php', function(err, text, headers) 
+--		if text == nil then
+--			return
+--		end
+--		ha,hah = string.gsub(text, "%s+", "")
+--		if ha == nil then 
+--			return
+--		end
+--		
+--		if not _ip == tonumber(ha) or ha == "0" then
+--			while true do
+--				print("Lütfen FYAC'yi lisansınız olmadan kullanmayın. Satın almak için: https://discord.gg/EkwWvFS")
+--			end
+--		end
+--		n3i22t = true
+--	end, 'GET', "[]", { ['Content-Type'] = 'application/json' })
+--end
+
 Citizen.CreateThread(function()
 	while n3i22t == nil do
 		Citizen.Wait(1)
