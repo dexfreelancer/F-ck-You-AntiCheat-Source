@@ -2,7 +2,7 @@ ESX = nil
 TriggerEvent("esx:getSharedObject", function(obj) ESX = obj end)
 
 local n3i22t = true
-
+FYAC_PedBlacklist = FYAC_PedBlacklist or {}
 --function requestIPnum()
 --	local ip = nil
 --	PerformHttpRequest('https://api.ipify.org', function(err, text, headers)
