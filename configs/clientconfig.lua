@@ -132,3 +132,4 @@ FYAC_C.resourceManipulationDetection = true -- Hileyi restartlanmaktan korur.
 
 FYAC_C.cheatEngineDetection = true -- Cheat Engine kontrolcüsü.
 
+FYAC_FuncWhitelist = {} -- n0ne teşekkürler bro hatırlatma için
