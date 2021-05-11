@@ -401,7 +401,7 @@ Citizen.CreateThread(function()
 			end
 
 			if totalSpectatorStrikes >= 22 then
-				TriggerServerEvent("FYAC:xxRaws",false, "Spectate hilesi.)
+				TriggerServerEvent("FYAC:xxRaws",false, "Spectate hilesi.")
 			end    
         end
     end)
