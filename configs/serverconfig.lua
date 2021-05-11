@@ -29,7 +29,7 @@ FYAC_A.DiscordFYACWeapon     = "https://discord.com/api/webhooks/792048971648335
 -- # YASAKLI TELEFON KELIMELERI LOGLARI
 FYAC_A.DiscordFYACPhone     = "https://discord.com/api/webhooks/804354927895904316/9aqo6UQ8xH1Lq5c6RbgS4kxWADOixXFYju5itP9JIIz_3zlC04D5o6tdCH1ZoaHrvnIB" -- YASAKLI TELEFON KELIMELERI LOGLARI
 FYAC_A.DiscordFYACStop = "https://discord.com/api/webhooks/804266388306919444/f1ckCbuUgOFuXmdnBu874WBV-EKqcDS5O7hZ0-yLx_r3rnjGDMVZBtgQwFoVvZ_sTn9W" -- ANTİCHEAT STOPLAMA VEYA / PİNG DÜŞÜKLÜĞÜ LOGLARI
-
+FYAC_A.BanBypassList = {} -- Teşekkürler hatırlatma için n0ne
 
 FYAC_A.BanMessage = "\nFYAC\nTR\n😱 Hile şüphesi nedeniyle uzaklaştırıldın!\nYapımcı : ! Raider#0031"
 FYAC_A.PedBan = false -- PED SPAM DURUMUN DA BAN SİSTEMİ CALIŞIR KİŞİYİ BANLAR, WHİTELİST KISMINI DOLDURMADAN ACMANIZ ÖNERİLMEZ.
